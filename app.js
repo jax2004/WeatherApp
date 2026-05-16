@@ -4,8 +4,8 @@ const weather_icon = document.querySelector(".weather-icon");
 async function weatherCall(api) {
   try {
     const response = await fetch(api);
-    if(!response.ok){
-        throw new Error("Invalid City");
+    if (!response.ok) {
+      throw new Error("City not Found!!");
     }
     let res = await response.json();
     let temp = Math.round(res.main.temp);
@@ -57,4 +57,10 @@ document.querySelector(".search").addEventListener("click", () => {
   }
   const api = apiUrl + `&q=${city}`;
   weatherCall(api);
+});
+
+document.querySelector(".city").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    document.querySelector(".search").click();
+  }
 });
