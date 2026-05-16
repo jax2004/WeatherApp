@@ -1,5 +1,5 @@
 const apiKey = "37ce9e480ebceb6fb8aefa3112266057";
-const apiUrl = `http://api.openweathermap.org/data/2.5/weather?&appid=${apiKey}&units=metric`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?&appid=${apiKey}&units=metric`;
 const weather_icon = document.querySelector(".weather-icon");
 async function weatherCall(api) {
   try {
