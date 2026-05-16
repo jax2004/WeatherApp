@@ -1,7 +1,7 @@
 A responsive Weather Application built using Vanilla JavaScript that fetches real-time weather data from the OpenWeatherMap API. The project demonstrates API integration, asynchronous programming (async/await), and dynamic DOM manipulation.
 
 🔗 Live Demo
-(Add deployed link here if hosted on GitHub Pages)
+https://weather-app-sepia-phi-81.vercel.app/
 
 📌 Overview
 This application allows users to search for any city and view current weather details including temperature, humidity, and wind speed. Weather icons update dynamically based on real-time conditions.
